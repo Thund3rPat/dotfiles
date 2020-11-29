@@ -27,10 +27,6 @@ function icat
     kitty +kitten icat $argv
 end
 
-function vim
-    nvim $argv
-end
-
 function u
     sudo apt update; sudo apt upgrade; flatpak update
 end
