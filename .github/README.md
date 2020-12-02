@@ -1,6 +1,7 @@
 # My Dotfiles
 
 This repository contains my dotfiles for my Pop!_OS.
+My dotfiles are managed with a bare git repository.
 
 + OS: [Pop!_OS 20.10](https://pop.system76.com/)
 + Shell: [fish](https://fishshell.com/) + [fisher](https://github.com/jorgebucaran/fisher)
@@ -22,15 +23,34 @@ dotfiles checkout
 
 ## Setup fish
 
+```bash
+sudo apt install fish
+sudo chsh -s $(which fish)
+```
+
 Install fisher: https://github.com/jorgebucaran/fisher
 
 Then do:
 ```bash
-fisher install IlanCosman/tide
 fisher install dracula/fish
+fisher install IlanCosman/tide
+fisher install jethrokuan/z
 ```
 
 After that run:
-```
+```bash
 tide configure
 ```
+
+## Setup lsd
+Prerequisite:
+```bash
+sudo apt install fonts-font-awesome powerline
+```
+Download Font: [Fira Code Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
+
+Download lsd deb and install with eddy: https://github.com/Peltoche/lsd/releases
+
+
+## Install Spacevim
+Follow https://spacevim.org/quick-start-guide/#linux-and-macos
