@@ -35,7 +35,8 @@
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
-    
+    "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline Plus Nerd File Types Mono",
+
 
     // Other
     "workbench.startupEditor": "newUntitledFile",

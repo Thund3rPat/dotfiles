@@ -1,9 +1,18 @@
 ### Thund3rPat's fish config ###
 
+
+set fish_greeting
 set EDITOR "vim"
 
 
+### Startup ###
+neofetch
+seq 1 (tput cols) | sort -R | spark | lolcat
+
+
 ### Functions for aliases ###
+
+alias clear='clear; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo'
 
 # git bare  
 function dotfiles

@@ -35,6 +35,7 @@ Then do:
 fisher install dracula/fish
 fisher install IlanCosman/tide
 fisher install jethrokuan/z
+fisher install jorgebucaran/spark.fish
 ```
 
 After that run:
@@ -54,3 +55,14 @@ Download lsd deb and install with eddy: https://github.com/Peltoche/lsd/releases
 
 ## Install Spacevim
 Follow https://spacevim.org/quick-start-guide/#linux-and-macos
+
+
+## Dracula Skin for Steam
+```bash
+cd ~/.steam/debian-installation/skins && git clone https://github.com/dracula/steam.git 'Dracula'
+cd Dracula && ./install.sh
+```
+Autostart steam with:
+```bash
+steam -silent -noverifyfiles
+```
