@@ -1,12 +1,13 @@
 ### Thund3rPat's fish config ###
 
 
-set fish_greeting
-set EDITOR "vim"
+set -x fish_greeting
+set -x EDITOR "vim"
 
+set -x PF_INFO "ascii title os kernel uptime pkgs memory"
 
 ### Startup ###
-neofetch
+pfetch
 seq 1 (tput cols) | sort -R | spark | lolcat
 
 
