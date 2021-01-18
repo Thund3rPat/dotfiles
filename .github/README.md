@@ -36,6 +36,7 @@ fisher install dracula/fish
 fisher install IlanCosman/tide
 fisher install jethrokuan/z
 fisher install jorgebucaran/spark.fish
+fisher install jorgebucaran/autopair.fish
 ```
 
 After that run:
@@ -55,6 +56,12 @@ Download lsd deb and install with eddy: https://github.com/Peltoche/lsd/releases
 
 ## Install Spacevim
 Follow https://spacevim.org/quick-start-guide/#linux-and-macos
+
+## Conky
+Add this to autostart.
+```
+conky -d -c .config/conky/conky.conf
+```
 
 
 ## Dracula Skin for Steam
