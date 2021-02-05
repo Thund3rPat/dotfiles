@@ -32,11 +32,7 @@ Install fisher: https://github.com/jorgebucaran/fisher
 
 Then do:
 ```bash
-fisher install dracula/fish
-fisher install IlanCosman/tide
-fisher install jethrokuan/z
-fisher install jorgebucaran/spark.fish
-fisher install jorgebucaran/autopair.fish
+fisher install dracula/fish IlanCosman/tide jethrokuan/z jorgebucaran/spark.fish jorgebucaran/autopair.fish
 ```
 
 After that run:

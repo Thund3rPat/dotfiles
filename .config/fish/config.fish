@@ -2,9 +2,9 @@
 
 
 set -x fish_greeting
-set -x EDITOR "vim"
+set -x EDITOR "nvim"
 
-set -x PF_INFO "ascii title os kernel uptime pkgs memory"
+set -x PF_INFO "ascii title os kernel shell uptime pkgs memory palette"
 
 ### Startup ###
 pfetch
@@ -12,12 +12,16 @@ seq 1 (tput cols) | sort -R | spark | lolcat
 
 
 ### Functions for aliases ###
+function vim
+    nvim $argv
+end
+
 
 alias clear='clear; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo'
 
 # git bare  
 function dotfiles
-   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
+    git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $argv
 end
 
 function ls
