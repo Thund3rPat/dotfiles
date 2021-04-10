@@ -1,11 +1,36 @@
 {
-    
+    // Snippets
+    //"editor.snippetSuggestions": "top",
+
     // HTML
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
       },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+
+    // JS
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      },
+    "[typescript]":{
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
     
+    "prettier.jsxSingleQuote": false,
+    "prettier.singleQuote": true,
+    
+    "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
+
     // Go 
     "go.useLanguageServer": true,
 
@@ -17,6 +42,7 @@
         "--load-plugins",
         "pylint_django"
     ],
+    "python.pythonPath": "/usr/bin/python3",
     "python.linting.pylintEnabled": true,
     "python.showStartPage": false,
 
@@ -28,12 +54,13 @@
     },
     "emmet.includeLanguages": {"django-html": "html"},
 
+ 
+
     // C/C++
     "C_Cpp.updateChannel": "Insiders",
 
     // Theming
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline Plus Nerd File Types Mono",
 
@@ -42,10 +69,17 @@
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "python.pythonPath": "/usr/bin/python3",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    "workbench.colorTheme": "Dracula",
+    "editor.fontSize": 15,
+    "python.analysis.completeFunctionParens": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }

@@ -4,20 +4,12 @@
 set -x fish_greeting
 set -x EDITOR "nvim"
 
-set -x PF_INFO "ascii title os kernel shell uptime pkgs memory palette"
-
-### Startup ###
-pfetch
-seq 1 (tput cols) | sort -R | spark | lolcat
-
+neofetch
 
 ### Functions for aliases ###
 function vim
     nvim $argv
 end
-
-
-alias clear='clear; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo'
 
 # git bare  
 function dotfiles
@@ -46,3 +38,7 @@ end
 function yta-mp3
     youtube-dl --extract-audio --audio-format mp3 $argv
 end
+
+
+# init starfish
+starship init fish | source

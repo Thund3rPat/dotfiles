@@ -28,16 +28,16 @@ sudo apt install fish
 sudo chsh -s $(which fish)
 ```
 
+Install starfish prompt:
+```bash
+curl -fsSL https://starship.rs/install.sh | bash
+```
+
 Install fisher: https://github.com/jorgebucaran/fisher
 
 Then do:
 ```bash
-fisher install dracula/fish IlanCosman/tide jethrokuan/z jorgebucaran/spark.fish jorgebucaran/autopair.fish
-```
-
-After that run:
-```bash
-tide configure
+fisher install dracula/fish
 ```
 
 ## Setup lsd
@@ -56,7 +56,8 @@ Follow https://spacevim.org/quick-start-guide/#linux-and-macos
 ## Conky
 Add this to autostart.
 ```
-conky -d -c .config/conky/conky.conf
+conky -d -c .config/conky/clock.conf
+conky -d -c .config/conky/sidebar.conf
 ```
 
 
