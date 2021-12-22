@@ -4,7 +4,7 @@
 set -x fish_greeting
 set -x EDITOR "nvim"
 
-neofetch
+#neofetch
 
 ### Functions for aliases ###
 function vim
@@ -38,7 +38,6 @@ end
 function yta-mp3
     youtube-dl --extract-audio --audio-format mp3 $argv
 end
-
 
 # init starfish
 starship init fish | source

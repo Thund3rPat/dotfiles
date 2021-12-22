@@ -15,6 +15,7 @@ system:
   prelaunch_command: /home/thunderpat/mx500/Games/league-of-legends/launchhelper.sh
 wine:
   MouseWarpOverride: enable
-  ShowCrashDialog: false
+  dxvk_version: v1.7.3L-03f11ba
+  esync: false
   show_debug: -all
-  version: lutris-lol-5.5-2-x86_64
+  version: lutris-ge-lol-6.16-4-x86_64
